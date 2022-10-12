@@ -1,7 +1,7 @@
 import numpy
 from podder_task_foundation import Context, Payload
 from podder_task_foundation import Process as ProcessBase
-
+from podder_task_foundation_objects_image import Image
 from .debugger import Debugger
 from .ocr import OCR
 
