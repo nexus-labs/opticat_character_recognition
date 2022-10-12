@@ -5,6 +5,7 @@ This repository include a simple pipline for 3 different OCRs (EasyOCR, PaddleOC
 * <a href="https://github.com/nexus-labs/opticat_character_recognition/#how-to-run">HOW TO RUN</a>
 * <a href="https://github.com/nexus-labs/opticat_character_recognition/#how-to-specify-the-ocr">HOW TO SPECIFY THE OCR</a>
 * <a href="https://github.com/nexus-labs/opticat_character_recognition/#io-info">I/O INFO</a>
+* <a href="https://github.com/nexus-labs/opticat_character_recognition/#demo">DEMO</a>
 
 ## Summary
 ### how to install:
@@ -31,3 +32,9 @@ The input of the pipeline is an image. theouput is a dict that includes informat
 ![Alt Text](https://github.com/nexus-labs/opticat_character_recognition/blob/main/input/test.png)
 #### output
 ![Alt Text](https://github.com/nexus-labs/opticat_character_recognition/blob/main/figs/fig1.PNG)
+
+### Demo
+You can try the model on colab for easy start:
+<a href='https://colab.research.google.com/drive/1_O6t8ldD5VV2cGECJc4nGrBCYzyel1-K?usp=sharing'>![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)</a>
+
+
