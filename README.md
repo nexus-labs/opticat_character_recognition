@@ -1,6 +1,6 @@
 # Opticat_Character_Recognition
 This repository include a simple pipline for 3 different OCRs (EasyOCR, PaddleOCR and DocTr).
-##Quick access:
+## Quick access:
 * <a href="https://github.com/nexus-labs/opticat_character_recognition#how-to-install">HOW TO INSTALL</a>
 * <a href="https://github.com/nexus-labs/opticat_character_recognition/#how-to-run">HOW TO RUN</a>
 * <a href="https://github.com/nexus-labs/opticat_character_recognition/#how-to-specify-the-ocr">HOW TO SPECIFY THE OCR</a>
