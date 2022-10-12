@@ -3,7 +3,7 @@ import torch
 import easyocr
 from paddleocr import PaddleOCR
 import os
-import logging
+from podder_task_foundation_objects_image import Image
 
 class OCR:
     def __init__(self, selected_ocr, params):
@@ -50,7 +50,10 @@ class OCR:
         mean_confidence_score = 0
         words = []
         file_name = image_object.name
-        image_numpy = numpy.array(image_object.data)
+        input_image = image_object.data
+        if input_image.mode != 'RGB':
+            input_image = input_image.convert("RGB")
+        image_numpy = numpy.asarray(input_image)[:, :, ::-1]
         image_height, image_width = image_numpy.shape[:2]
 
         if self.selected_ocr == "easyocr":
@@ -76,14 +79,14 @@ class OCR:
                             words.append(self.reorganize_output(word, points_numpy, confidence_score_decimal, image_height, image_width))
 
         if self.selected_ocr == "paddleocr":
-            result = self.ocr.ocr(image_numpy.copy(), cls=False)
+            result = self.ocr.ocr(image_numpy, cls=True)[0]      
             for i in range(len(result)):
                 points = result[i][0]
                 word = result[i][1][0]
                 confidence_score_decimal = result[i][1][1]
-                if word == "":
-                    continue
-                points_numpy = numpy.array(points)
+                if word == "" or word == " " or word is None:
+                    continue                   
+                points_numpy = numpy.array(points)                
                 words.append(self.reorganize_output(word, points_numpy, confidence_score_decimal, image_height, image_width))
         if len(words) > 0:
             mean_confidence_score = self.get_mean_confidence(words)
