@@ -1,10 +1,10 @@
 # Opticat_Character_Recognition
 This repository include a simple pipline for 3 different OCRs (EasyOCR, PaddleOCR and DocTr).
 ##Quick access:
-* <a href="https://github.com/nexus-labs/opticat_character_recognition/edit/main/README.md#how-to-install">HOW TO INSTALL</a>
-* <a href="https://github.com/nexus-labs/opticat_character_recognition/edit/main/README.md#how-to-run">HOW TO RUN</a>
-* <a href="https://github.com/nexus-labs/opticat_character_recognition/edit/main/README.md#how-to-specify-the-ocr">HOW TO SPECIFY THE OCR</a>
-* <a href="https://github.com/nexus-labs/opticat_character_recognition/edit/main/README.md#io-info">I/O INFO</a>
+* <a href="https://github.com/nexus-labs/opticat_character_recognition/main/README.md#how-to-install">HOW TO INSTALL</a>
+* <a href="https://github.com/nexus-labs/opticat_character_recognition/main/README.md#how-to-run">HOW TO RUN</a>
+* <a href="https://github.com/nexus-labs/opticat_character_recognition/main/README.md#how-to-specify-the-ocr">HOW TO SPECIFY THE OCR</a>
+* <a href="https://github.com/nexus-labs/opticat_character_recognition/main/README.md#io-info">I/O INFO</a>
 
 ## Summary
 ### how to install:
