@@ -1,0 +1,4 @@
+ocr_language: "en"
+table: True
+use_angle_cls: False
+

@@ -1,0 +1,3 @@
+ocr_language: 'en'
+use_gpu: False
+quantize: False
