@@ -8,7 +8,7 @@ authors = ["Your Name <you@example.com>"]
 python = ">=3.7.1,<3.10"
 podder-task-foundation = {git = "https://github.com/podder-ai/podder-task-foundation.git", rev = "main", tag = "0.2.7"}
 podder-task-foundation-objects-image = {git = "https://github.com/podder-ai/podder-task-foundation-objects-image", rev = "main", tag = "0.1.4"}
-pillow = "9.0.1"
+pillow = "9.3.0"
 easyocr = "^1.4.0"
 torch = "1.10.0"
 torchvision = "0.11.1"
